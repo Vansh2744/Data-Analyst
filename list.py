@@ -35,19 +35,38 @@
 
 # print(names)
 
-nums = [23,45,67,12,12]
+# nums = [23,45,67,12,12]
 
-print(max(nums))
-print(min(nums))
+# print(max(nums))
+# print(min(nums))
 
-print(nums.count(12))
+# print(nums.count(12))
 
-print(nums.index(67))
+# print(nums.index(67))
 
-nums.remove(12)
+# nums.remove(12)
 
-print(nums)
+# print(nums)
 
-nums.clear()
+# nums.clear()
 
-print(nums)
+# print(nums)
+
+#----------Operator Overloading------------
+
+users1 = ["Vansh","Rahul","Aman"]
+users2 = ["Kartik",'Scout']
+
+# users = users1 + users2
+
+# print(users)
+
+# users = users1 * 3
+
+# print(users)
+
+name = bytearray(b"Vansh")
+
+name = name.replace(b"V",b"T")
+
+print(name)
