@@ -54,19 +54,27 @@
 
 #----------Operator Overloading------------
 
-users1 = ["Vansh","Rahul","Aman"]
-users2 = ["Kartik",'Scout']
+# users1 = ["Vansh","Rahul","Aman"]
+# users2 = ["Kartik",'Scout']
 
-# users = users1 + users2
+# # users = users1 + users2
 
-# print(users)
+# # print(users)
 
-# users = users1 * 3
+# # users = users1 * 3
 
-# print(users)
+# # print(users)
 
-name = bytearray(b"Vansh")
+# name = bytearray(b"Vansh")
 
-name = name.replace(b"V",b"T")
+# name = name.replace(b"V",b"T")
 
-print(name)
+# print(name)
+
+#--------Zip--------------------
+
+names = ["Vansh","Aman","Rahul","Rohan"]
+scores = [50, 100, 80, 67]
+
+for name,score in zip(names,scores):
+    print(f"{name}: {score}")
