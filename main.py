@@ -1,9 +1,3 @@
-a = 34
+names = ("vansh","aman","rahul")
 
-print(a)
-print(id(a))
-
-a+=10
-
-print(a)
-print(id(a))
+print(names[::-1])
