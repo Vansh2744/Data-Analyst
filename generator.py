@@ -17,20 +17,35 @@
 
 #----------Infinite Generator-------------
 
-def infinite_gen():
-    count = 1
+# def infinite_gen():
+#     count = 1
+#     while True:
+#         yield f"Count : {count}"
+#         count += 1
+
+# loop_gen = infinite_gen()
+# loop_gen1 = infinite_gen()
+
+# for _ in range(5):
+#     print(next(loop_gen))
+
+# for _ in range(5):
+#     print(next(loop_gen))
+
+# for _ in range(5):
+#     print(next(loop_gen1))
+
+#--------------Send Value----------------
+
+def send_data():
+    name = yield
     while True:
-        yield f"Count : {count}"
-        count += 1
+        print(name)
+        name = yield
 
-loop_gen = infinite_gen()
-loop_gen1 = infinite_gen()
+send_name = send_data()
 
-for _ in range(5):
-    print(next(loop_gen))
+next(send_name)
 
-for _ in range(5):
-    print(next(loop_gen))
-
-for _ in range(5):
-    print(next(loop_gen1))
+send_name.send("Vansh")
+send_name.send("Aman")
