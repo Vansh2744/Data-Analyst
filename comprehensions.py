@@ -66,3 +66,6 @@
 # # print(next(res))
 
 # print(list(res))
+
+# for i in res:
+#     print(i)
