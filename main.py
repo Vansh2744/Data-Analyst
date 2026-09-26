@@ -1,4 +1,21 @@
-arr = [1,2,3,4,5]
+data = [{
+    'name':"Vansh",
+    'email':"vansh@gmail.com",
+    'age':23
+},{
+    'name':"Aman",
+    'email':"aman@gmail.com",
+    'age':23
+},{
+    'name':"Kartik",
+    'email':"kartik@gmail.com",
+    'age':23
+},{
+    'name':"Rahul",
+    'email':"rahul@gmail.com",
+    'age':23
+}]
 
-for i, num in enumerate(arr):
-    print(i,num)
+res = next((user for user in data if user['email'] == "vansh@gmail.com"))
+
+print(res)
