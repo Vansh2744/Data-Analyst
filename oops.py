@@ -20,15 +20,29 @@
 
 #---------Attribute Shadowing----------
 
-class Student:
-    school_name = "GSSS"
+# class Student:
+#     school_name = "GSSS"
 
-std = Student()
+# std = Student()
 
-std.school_name = "HPSSS"
+# std.school_name = "HPSSS"
 
-print(std.school_name)
+# print(std.school_name)
 
-del std.school_name
+# del std.school_name
 
-print(std.school_name)
+# print(std.school_name)
+
+#------------self argument----------------
+
+# class Student:
+#     school = "GSSS"
+
+#     def info(self):
+#         print(self.school)
+
+# std = Student()
+
+# std.info()
+
+# Student.info(std)
