@@ -37,15 +37,46 @@
 
 #--------------Send Value----------------
 
-def send_data():
-    name = yield
-    while True:
-        print(name)
-        name = yield
+# def send_data():
+#     name = yield
+#     while True:
+#         print(name)
+#         name = yield
 
-send_name = send_data()
+# send_name = send_data()
 
-next(send_name)
+# next(send_name)
 
-send_name.send("Vansh")
-send_name.send("Aman")
+# send_name.send("Vansh")
+# send_name.send("Aman")
+
+#-------------Yield From-------------------
+
+# def dis_names():
+#     yield "Vansh"
+#     yield "Aman"
+
+# def dis_scores():
+#     yield 45
+#     yield 89
+
+# def dis_all():
+#     yield from dis_names()
+#     yield from dis_scores()
+
+# all = dis_all()
+
+# for i in all:
+#     print(i)
+
+# def display():
+#     try:
+#         while True:
+#             name = yield "Vansh"
+#     except:
+#         print("Completed")
+
+# dis = display()
+
+# print(next(dis))
+# dis.close()
