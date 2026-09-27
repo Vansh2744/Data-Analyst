@@ -46,3 +46,22 @@
 # std.info()
 
 # Student.info(std)
+
+#-----------__init__--------------------
+
+# class Student:
+#     def __init__(self, school_name, student_name):
+#         self.school_name = school_name
+#         self.student_name = student_name
+
+#     def display_info(self):
+#         print(f"School Name : {self.school_name}")
+#         print(f"Student Name : {self.student_name}")
+
+# std1 = Student("GSSS", "Vansh")
+
+# std1.display_info()
+
+# std2 = Student("HPSSS", "Aman")
+
+# std2.display_info()
