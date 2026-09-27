@@ -65,3 +65,37 @@
 # std2 = Student("HPSSS", "Aman")
 
 # std2.display_info()
+
+#----------Inheritance------------------
+
+class School:
+    def __init__(self, school_name):
+        self.school_name = school_name
+
+    def display_info(self):
+        return f"School Name : {self.school_name}"
+
+class Student(School):
+    def __init__(self, school_name, student_name):
+        super().__init__(school_name)
+        self.student_name = student_name
+
+    def student_info(self):
+        return f"School Name : {self.student_name}"
+
+std = Student("GSSS","Vansh")
+
+print(std.student_info())
+print(std.display_info())
+
+class Random:
+    school = School
+    def __init__(self):
+        self.rand = self.school("HPSSS")
+
+    def display(self):
+        return f"School Name(Random class) : {self.rand.school_name}"
+
+rand = Random()
+
+print(rand.display())
