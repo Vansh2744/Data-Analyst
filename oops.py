@@ -132,22 +132,31 @@
 
 #------------Method Resolution Order(MRO)--------------
 
-class A:
-    def display(self):
-        print("Class A")
+# class A:
+#     def display(self):
+#         print("Class A")
 
-class B(A):
-    def display(self):
-        print("Class B")
+# class B(A):
+#     def display(self):
+#         print("Class B")
 
-class C(A):
-    def display(self):
-        print("Class C")
+# class C(A):
+#     def display(self):
+#         print("Class C")
 
-class D(B, C):
-    pass
+# class D(B, C):
+#     pass
 
-d = D()
+# d = D()
 
-d.display()
-print(D.__mro__)
+# d.display()
+# print(D.__mro__)
+
+#--------------Static Method--------------
+
+# class Student:
+#     @staticmethod
+#     def display():
+#         print("Hello Vansh")
+
+# Student.display()
