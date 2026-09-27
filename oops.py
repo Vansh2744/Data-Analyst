@@ -68,34 +68,64 @@
 
 #----------Inheritance------------------
 
-class School:
-    def __init__(self, school_name):
-        self.school_name = school_name
+# class School:
+#     def __init__(self, school_name):
+#         self.school_name = school_name
 
-    def display_info(self):
-        return f"School Name : {self.school_name}"
+#     def display_info(self):
+#         return f"School Name : {self.school_name}"
 
-class Student(School):
-    def __init__(self, school_name, student_name):
-        super().__init__(school_name)
-        self.student_name = student_name
+# class Student(School):
+#     def __init__(self, school_name, student_name):
+#         super().__init__(school_name)
+#         self.student_name = student_name
 
-    def student_info(self):
-        return f"School Name : {self.student_name}"
+#     def student_info(self):
+#         return f"School Name : {self.student_name}"
 
-std = Student("GSSS","Vansh")
+# std = Student("GSSS","Vansh")
 
-print(std.student_info())
-print(std.display_info())
+# print(std.student_info())
+# print(std.display_info())
 
-class Random:
-    school = School
-    def __init__(self):
-        self.rand = self.school("HPSSS")
+# class Random:
+#     school = School
+#     def __init__(self):
+#         self.rand = self.school("HPSSS")
 
-    def display(self):
-        return f"School Name(Random class) : {self.rand.school_name}"
+#     def display(self):
+#         return f"School Name(Random class) : {self.rand.school_name}"
 
-rand = Random()
+# class ChildRandom(Random):
+#     std = Student
 
-print(rand.display())
+# rand = Random()
+
+# print(rand.display())
+
+# child = ChildRandom()
+
+# print(child.rand.display_info())
+# print(child.std("HPSSS","Aman").student_info())
+
+#----------Explicit way to access base class-----------
+
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def display_std(self):
+#             return f"Name : {self.name}"
+
+# class Student1(Student):
+#     def __init__(self, name, email):
+#         Student.__init__(self, name)
+#         self.email = email
+
+#     def display(self):
+#         return f"Name : {self.name}  Email : {self.email}"
+
+# std = Student1("Vansh", "vansh@gmail.com")
+
+# print(std.display())
+# print(std.display_std())
