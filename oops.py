@@ -188,3 +188,26 @@
 
 # std3 = Student("Rahul","rahul@gmail.com")
 # print(std3.display())
+
+#------------Property Method-----------------
+
+# class Student:
+#     def __init__(self, school_name):
+#         self._school_name = school_name
+
+#     @property              #Getter
+#     def school_name(self):
+#         return f"School Name : {self._school_name}"
+
+#     @school_name.setter       #Setter
+#     def school_name(self, name):
+#         self._school_name = name
+        
+
+# std = Student("GSSS")
+
+# print(std.school_name)
+
+# std.school_name = "HPSSS"
+
+# print(std.school_name)
