@@ -160,3 +160,31 @@
 #         print("Hello Vansh")
 
 # Student.display()
+
+#--------------Class Method----------------
+
+# class Student:
+#     def __init__(self, name:str, email:str):
+#         self.name = name
+#         self.email = email
+
+#     @classmethod
+#     def get_from_dict(cls, data):
+#         return cls(data['name'],data['email'])
+
+#     @classmethod
+#     def get_from_string(cls, data):
+#         name , email = data.split('-')
+#         return cls(name, email)
+
+#     def display(self):
+#         return f"Name : {self.name}  Email : {self.email}"
+
+# std1 = Student.get_from_dict({'name':'Vansh', 'email':'vansh@gmail.com'})
+# print(std1.display())
+
+# std2 = Student.get_from_string("Aman-aman@gmail.com")
+# print(std2.display())
+
+# std3 = Student("Rahul","rahul@gmail.com")
+# print(std3.display())
